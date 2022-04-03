@@ -1,0 +1,25 @@
+.form {
+  margin-top: 20px;
+  margin: 50px;
+}
+.selectAreaSelect {
+  height: 6vh;
+}
+.form {
+  width: 60%;
+  margin-left: 20%;
+}
+.buttonClass {
+  background-color: blue;
+  color: aliceblue;
+  border: 0;
+  width: 20%;
+  height: 5vh;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 80%;
+  margin-top: 5vh;
+}
+.button1 {
+  background-color: aliceblue;
+}
