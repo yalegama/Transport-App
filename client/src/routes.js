@@ -38,6 +38,7 @@ import AddEmployeeToBus from "layouts/addEmployeeToBus/AddEmployeeToBus";
 import AddEmployeeToVan from "layouts/addEmployeetoVan/AddEmployeeToVan";
 import AllEmployee from "layouts/allEmployee/AllEmployee";
 import AllVehicle from "layouts/allVehicle/AllVehicle";
+import Employee from "layouts/employee/Employee";
 const routes = [
   {
     type: "collapse",
@@ -54,6 +55,14 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/add/employee/to/bus",
     component: <AddEmployeeToBus/>,
+  },
+  {
+    type: "collapse",
+    name: "Add Employee",
+    key: "employeed",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/add/employee",
+    component: <Employee/>,
   },
   {
     type: "collapse",

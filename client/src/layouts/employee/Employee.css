@@ -1,0 +1,33 @@
+.colorBar {
+    background-color: #3993ee;
+    width: 100%;
+    height: 8vh;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    margin-left: 40%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .singleForm {
+    display: flex;
+    align-items: center;
+  }
+  .block {
+    margin: 12px;
+  }
+  .inputDiv {
+    width: 100%;
+  }
+  .formClass {
+    margin-top: 20px;
+    margin: 50px;
+  }
+  .labelTitle {
+    font-size: medium;
+  }
+  
