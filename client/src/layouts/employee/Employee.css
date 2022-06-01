@@ -30,4 +30,29 @@
   .labelTitle {
     font-size: medium;
   }
-  
+.alltable{
+  display: flex;
+}  
+.table1{
+  margin: 10px;
+}
+
+.table1{
+  border-radius: 20px;
+}
+.table2{
+  margin: 10px;
+  border-radius: 20px;
+}
+.title{
+  margin-left: 50%;
+}
+.method{
+  height: 20px;
+}
+.factoryinselect{
+  height: 50px;
+}
+.column{
+  height: 50px;
+}
