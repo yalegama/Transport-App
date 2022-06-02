@@ -183,3 +183,31 @@ app.get("/allroutes",(req,res)=>{
         res.send(result);
     })
 })
+
+app.post("/addemployee",(req,res)=>{
+    const transporttype=req.body.transporttype;
+    const shift=req.body.shift;
+    const route=req.body.route;
+    const epfnumber=req.body.epfnumber;
+    const name=req.body.name;
+    const pickuppoint=req.body.pickuppoint;
+    const pickuptime=req.body.pickuptime;
+    const droptime=req.body.droptime;
+    const vanroute=req.body.vanroute;
+
+    const employeeBus="INSERT INTO addemployeetobus(transporttype,shift,route,epfnumber,name,pickuppoint,pickuptime,droptime,vanroute) VALUES (?,?,?,?,?,?,?,?,?)";
+    db.query(employeeBus,[transporttype,shift,route,epfnumber,name,pickuppoint,pickuptime,droptime,vanroute],(err,result)=>{
+        if(err){
+            console.log(err)
+        }else{
+            console.log(result)
+        }
+    })
+})
+
+app.get("/allemployeeinmas",(req,res)=>{
+    const allBusRoutes="SELECT * FROM employee";
+    db.query(allBusRoutes,(err,result)=>{
+        res.send(result);
+    })
+})
